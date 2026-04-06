@@ -1,4 +1,4 @@
-# 🖼️ Easy Image Rotator
+# 🖼️ Fast Image Rotator
 
 A high-performance, browser-native image rotation and transformation tool. Designed for users who need a fast, professional, and **100% private** way to edit images without uploading them to any server.
 

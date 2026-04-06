@@ -73,7 +73,7 @@ export default function App() {
       <header className="header">
         <div className="header-top">
           <div />
-          <h1>Easy Image Rotator</h1>
+          <h1>Fast Image Rotator</h1>
           <button
             id="btn-theme-toggle"
             className="theme-toggle"
