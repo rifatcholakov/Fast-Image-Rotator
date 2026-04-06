@@ -1,16 +1,50 @@
-# React + Vite
+# 🖼️ Image Rotator — Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, private, and precise image rotation tool that runs entirely in your browser. Built with focus on performance, privacy, and premium aesthetics.
 
-Currently, two official plugins are available:
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![React](https://img.shields.io/badge/built%20with-React-61dafb.svg)
+![Vite](https://img.shields.io/badge/powered%20by-Vite-646cff.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **🛡️ 100% Private**: Your images never leave your device. All processing is done locally via HTML5 Canvas.
+- **🔄 Pro Transforms**: 
+  - Precision 0-360° rotation slider.
+  - Quick 90° clockwise/counter-clockwise buttons.
+  - Horizontal & Vertical mirroring (flipping).
+- **🌗 Theme Aware**: High-end Dark and Light modes with system preference detection.
+- **📐 Context Stats**: Real-time display of image dimensions and orientation (Portrait/Landscape).
+- **🎉 Micro-animations**: Shimmer processing effects and celebratory confetti on successful save.
+- **📱 Fully Responsive**: Works perfectly on desktop, tablet, and mobile.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Core**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Visuals**: [Canvas Confetti](https://github.com/catdad/canvas-confetti)
+- **Styling**: Pure Vanilla CSS (Glassmorphism & Modern Dark UI)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/rifatcholakov/image-rotate.git
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+Made with ❤️ for the open-source community.
