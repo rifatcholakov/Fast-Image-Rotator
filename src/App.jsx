@@ -73,7 +73,7 @@ export default function App() {
       <header className="header">
         <div className="header-top">
           <div />
-          <h1>Image Rotator</h1>
+          <h1>Easy Image Rotator</h1>
           <button
             id="btn-theme-toggle"
             className="theme-toggle"
@@ -111,7 +111,7 @@ export default function App() {
       <footer className="footer">
         <div className="footer-links">
           <a 
-            href="https://github.com/yourusername/image-rotate" 
+            href="https://github.com/rifatcholakov/image-rotate" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="footer-link-pill"
