@@ -8,6 +8,8 @@ export default function App() {
   const [imageSrc, setImageSrc] = useState(null);
   const [fileName, setFileName] = useState('image.png');
   const [rotation, setRotation] = useState(0);
+  const [flipH, setFlipH] = useState(false);
+  const [flipV, setFlipV] = useState(false);
 
   // Default to system preference, fallback to dark
   const [theme, setTheme] = useState(() => {
@@ -27,14 +29,25 @@ export default function App() {
     setImageSrc(dataUrl);
     setFileName(name || 'image.png');
     setRotation(0);
+    setFlipH(false);
+    setFlipV(false);
   };
 
-  const handleRotateLeft = () => setRotation((r) => r - 90);
-  const handleRotateRight = () => setRotation((r) => r + 90);
-  const handleReset = () => setRotation(0);
+  const handleRotateLeft = () => setRotation((r) => (r - 90 + 360) % 360);
+  const handleRotateRight = () => setRotation((r) => (r + 90) % 360);
+  const handleSetRotation = (angle) => setRotation(angle);
+  const toggleFlipH = () => setFlipH((f) => !f);
+  const toggleFlipV = () => setFlipV((f) => !f);
+  const handleReset = () => {
+    setRotation(0);
+    setFlipH(false);
+    setFlipV(false);
+  };
   const handleClear = () => {
     setImageSrc(null);
     setRotation(0);
+    setFlipH(false);
+    setFlipV(false);
   };
 
   return (
@@ -64,8 +77,13 @@ export default function App() {
             imageSrc={imageSrc}
             fileName={fileName}
             rotation={rotation}
+            flipH={flipH}
+            flipV={flipV}
             onRotateLeft={handleRotateLeft}
             onRotateRight={handleRotateRight}
+            onSetRotation={handleSetRotation}
+            onToggleFlipH={toggleFlipH}
+            onToggleFlipV={toggleFlipV}
             onReset={handleReset}
             onClear={handleClear}
           />
