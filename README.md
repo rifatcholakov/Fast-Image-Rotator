@@ -4,8 +4,8 @@
 
 ---
 
-[![GitHub license](https://img.shields.io/github/license/rifatcholakov/image-rotate?style=flat-square&color=6366f1)](https://github.com/rifatcholakov/image-rotate/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/rifatcholakov/image-rotate?style=flat-square&color=fbbf24)](https://github.com/rifatcholakov/image-rotate/stargazers)
+[![GitHub license](https://img.shields.io/github/license/rifatcholakov/Fast-Image-Rotator?style=flat-square&color=6366f1)](https://github.com/rifatcholakov/Fast-Image-Rotator/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/rifatcholakov/Fast-Image-Rotator?style=flat-square&color=fbbf24)](https://github.com/rifatcholakov/Fast-Image-Rotator/stargazers)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-10b981.svg?style=flat-square)](http://makeapullrequest.com)
 [![Node Version](https://img.shields.io/badge/node-%3E%3D18-3b82f6?style=flat-square&logo=node.js)](https://nodejs.org/)
 
@@ -87,10 +87,10 @@
 
 ```bash
 # Clone the project
-git clone https://github.com/rifatcholakov/image-rotate.git
+git clone https://github.com/rifatcholakov/Fast-Image-Rotator.git
 
 # Enter directory
-cd image-rotate
+cd Fast-Image-Rotator
 
 # Install & Run
 npm install && npm run dev
@@ -121,7 +121,7 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 ## 👤 Author
 
 **Rifat Cholakov**
-- GitHub: [@rifatcholakov](https://github.com/rifatcholakov)
+- GitHub: [@rifatcholakov](https://github.com/rifatcholakov/Fast-Image-Rotator)
 
 ---
 

@@ -111,7 +111,7 @@ export default function App() {
       <footer className="footer">
         <div className="footer-links">
           <a 
-            href="https://github.com/rifatcholakov/image-rotate" 
+            href="https://github.com/rifatcholakov/Fast-Image-Rotator" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="footer-link-pill"
