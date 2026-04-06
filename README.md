@@ -4,10 +4,18 @@
 
 ---
 
-[![GitHub license](https://img.shields.io/github/license/rifatcholakov/Fast-Image-Rotator?style=flat-square&color=6366f1)](https://github.com/rifatcholakov/Fast-Image-Rotator/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/rifatcholakov/Fast-Image-Rotator?style=flat-square&color=fbbf24)](https://github.com/rifatcholakov/Fast-Image-Rotator/stargazers)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-10b981.svg?style=flat-square)](http://makeapullrequest.com)
-[![Node Version](https://img.shields.io/badge/node-%3E%3D18-3b82f6?style=flat-square&logo=node.js)](https://nodejs.org/)
+<p align="center">
+  <img src="https://img.shields.io/badge/Privacy-100%25_Local-10b981?style=for-the-badge&logo=shield-halved&logoColor=white" />
+  <img src="https://img.shields.io/badge/Security-Zero_Server_Uploads-3b82f6?style=for-the-badge&logo=cloud-slash&logoColor=white" />
+  <img src="https://img.shields.io/badge/Performance-Lightning_Fast-f59e0b?style=for-the-badge&logo=zap&logoColor=white" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/rifatcholakov/Fast-Image-Rotator?style=flat-square&color=fbbf24&logo=github" />
+  <img src="https://img.shields.io/badge/Build-Optimized-6366f1?style=flat-square&logo=vite" />
+  <img src="https://img.shields.io/badge/UX-Focused-ec4899?style=flat-square&logo=figma" />
+  <img src="https://img.shields.io/badge/License-MIT-gray?style=flat-square" />
+</p>
 
 ---
 
@@ -32,16 +40,49 @@
 
 ---
 
+## 🛡️ The Privacy Guarantee
+
+Typical online editors require you to upload your files to their servers "to process them." **Fast Image Rotator** is different. 
+
+### 📐 How it works (Local-Only Data Flow):
+
+```mermaid
+graph LR
+    User([User Image]) --> Upload[Private Load]
+    Upload --> RAM[Browser RAM]
+    RAM --> GPU[Local GPU / Canvas]
+    GPU --> Export[Instant Download]
+    
+    subgraph Browser_Sandbox
+    RAM
+    GPU
+    end
+    
+    subgraph No_Server
+    Server[(Remote Server)]
+    end
+    
+    style No_Server fill:#fdd,stroke:#f66
+    style Browser_Sandbox fill:#dfd,stroke:#5c5
+```
+
+1. **Local-Only**: Your image is loaded into your browser's RAM as a Data URL.
+2. **GPU Accelerated**: Transformations are performed by your local GPU using HTML5 Canvas.
+3. **No Network**: You can even use this app offline once the page is loaded.
+4. **Safe**: Your data never leaves your computer. Period.
+
+---
+
 ## 📖 Usage Tips
 
 - **🖱️ Drag & Drop**: You don't need to click "Browse". Just drag any image from your folder directly onto the app.
 - **🔄 Real-time Compare**: Click and hold the **"Original Preview"** button in the bottom right to instantly compare your edits with the raw photo.
 - **📏 Metadata HUD**: Keep an eye on the bottom pill to see real-time dimension changes as you rotate.
-- **💾 Format Selection**: Use the sidebar/settings to switch between PNG (lossless) and JPEG (optimized) before saving.
+- **💾 Save locally**: Once you're done, the high-quality edited version is baked on your device and saved instantly.
 
 ---
 
-## ✨ Features in Depth
+## ✨ Features In-Depth
 
 - **🛡️ 100% Client-Side**: No telemetry, no tracking, no uploads.
 - **🔄 Precision Transforms**:
@@ -56,8 +97,7 @@
 
 ---
 
-<details>
-<summary>🏗️ Technical Architecture (Click to expand)</summary>
+## 🏗️ Technical Architecture
 
 **Fast Image Rotator** uses a high-performance, single-page architecture:
 
@@ -67,17 +107,16 @@
   - `HTML5 Canvas API` for GPU-accelerated pixel transformations.
   - `toDataURL` for zero-server image generation.
 - **CSS Engine**: A custom variable-driven design system optimized for dark mode and mobile responsiveness.
-</details>
 
-<details>
-<summary>🗺️ Roadmap (Click to expand)</summary>
+---
+
+## 🗺️ Roadmap
 
 - [ ] **Batch Processing**: Rotate multiple images at once.
 - [ ] **Custom Resizing**: Change dimensions while maintaining aspect ratio.
 - [ ] **Format Conversion**: PNG to WebP/JPG/etc.
 - [ ] **PWA Support**: Installable desktop/mobile app for offline use.
 - [ ] **Keyboard Shortcuts**: `R` for rotate, `F` for flip, `S` for save.
-</details>
 
 ---
 
