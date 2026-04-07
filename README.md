@@ -8,6 +8,7 @@
   <img src="https://img.shields.io/badge/Privacy-100%25_Local-10b981?style=for-the-badge&logo=shield-halved&logoColor=white" />
   <img src="https://img.shields.io/badge/Security-Zero_Server_Uploads-3b82f6?style=for-the-badge&logo=cloud-slash&logoColor=white" />
   <img src="https://img.shields.io/badge/Performance-Lightning_Fast-f59e0b?style=for-the-badge&logo=zap&logoColor=white" />
+  <img src="https://img.shields.io/badge/PWA-Ready-6366f1?style=for-the-badge&logo=pwa&logoColor=white" />
 </p>
 
 <p align="center">
@@ -23,7 +24,7 @@
 - **⚡ Lightning Fast**: Optimized canvas-based rendering for instant edits and high-quality exports.
 - **🔒 Privacy First**: All processing stays on your device. Zero server uploads, 100% security.
 - **🎯 Precision Tools**: 90° snap rotations, Horizontal/Vertical flipping, and a 360° fine-tuned slider.
-- **🌗 Dual-Theme Engine**: Sleek "Midnight Slate" and "Clean Light" modes.
+- **📶 PWA & Offline**: Installable on any device with full functionality without an internet connection.
 - **✨ Next-Gen Stack**: Built with React 19 and Vite 8 for ultimate performance.
 
 ---
@@ -93,6 +94,7 @@ graph LR
 - **🎨 Visual Excellence**:
   - **Shimmer Overlays**: Real-time feedback during image generation.
   - **Celebration Confetti**: A delightful spark on every successful download!
+- **📶 PWA Integration**: Installable desktop/mobile experience with custom branding.
 - **⚡ Pro-Link Performance**: Instant preview using CSS transforms, followed by high-quality Canvas baking on export.
 
 ---
@@ -106,6 +108,7 @@ graph LR
   - `FileReader` for safe, local-only data ingestion.
   - `HTML5 Canvas API` for GPU-accelerated pixel transformations.
   - `toDataURL` for zero-server image generation.
+- **Offline Engine**: Service Worker (via Workbox) for complete offline asset availability and background updates.
 - **CSS Engine**: A custom variable-driven design system optimized for dark mode and mobile responsiveness.
 
 ---
@@ -115,7 +118,7 @@ graph LR
 - [ ] **Batch Processing**: Rotate multiple images at once.
 - [ ] **Custom Resizing**: Change dimensions while maintaining aspect ratio.
 - [ ] **Format Conversion**: PNG to WebP/JPG/etc.
-- [ ] **PWA Support**: Installable desktop/mobile app for offline use.
+- [x] **PWA Support**: Installable desktop/mobile app for offline use.
 - [ ] **Keyboard Shortcuts**: `R` for rotate, `F` for flip, `S` for save.
 
 ---
