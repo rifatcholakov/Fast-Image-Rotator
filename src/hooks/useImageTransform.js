@@ -1,9 +1,6 @@
 import { useState, useCallback } from 'react';
 import { ROTATION_STEP, DEFAULT_FILENAME } from '../utils/constants.js';
 
-/**
- * Custom hook to manage image transformation state.
- */
 export const useImageTransform = () => {
   const [imageSrc, setImageSrc] = useState(null);
   const [fileName, setFileName] = useState(DEFAULT_FILENAME);

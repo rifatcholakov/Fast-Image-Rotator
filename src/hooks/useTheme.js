@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import { THEMES, THEME_STORAGE_KEY } from '../utils/constants.js';
 
-/**
- * Custom hook to manage theme detection and persistence.
- */
 export const useTheme = () => {
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem(THEME_STORAGE_KEY);

@@ -35,7 +35,6 @@ export default function ImageEditor({
 
   const handleDownload = async () => {
     setIsProcessing(true);
-    // Add small delay to show shimmer/processing state
     await new Promise(r => setTimeout(r, 600));
     await processDownload(imageSrc, fileName, rotation, flipH, flipV);
     setIsProcessing(false);

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
-/* Dark theme (default) */
 :root,
 [data-theme="dark"] {
   --bg-primary: #0f172a;
@@ -32,7 +31,6 @@
     radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
 }
 
-/* Light theme */
 [data-theme="light"] {
   --bg-primary: #f1f5f9;
   --bg-secondary: #e2e8f0;
@@ -114,7 +112,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Header top row (title + toggle) */
 .header-top {
   display: flex;
   align-items: center;
@@ -124,7 +121,6 @@ body {
   margin: 0 auto 0.5rem;
 }
 
-/* Theme toggle button */
 .theme-toggle {
   display: flex;
   align-items: center;
@@ -146,7 +142,6 @@ body {
   border-color: rgba(99, 102, 241, 0.4);
 }
 
-/* Glass panel */
 .glass-panel {
   background: var(--glass-bg);
   backdrop-filter: blur(12px);
@@ -161,7 +156,6 @@ body {
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-/* Uploader */
 .uploader {
   border: 2px dashed var(--glass-border);
   border-radius: 16px;
@@ -230,7 +224,6 @@ body {
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
 }
 
-/* Editor */
 .editor-container {
   display: flex;
   flex-direction: column;
@@ -325,7 +318,6 @@ body {
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
 }
 
-/* Animations */
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -348,7 +340,6 @@ body {
   }
 }
 
-/* Status row */
 .status-row {
   display: flex;
   align-items: center;
@@ -393,7 +384,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Section grouping */
 .controls-section {
   width: 100%;
   display: flex;
@@ -410,7 +400,6 @@ body {
   color: var(--text-secondary);
 }
 
-/* Preset grid */
 .preset-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
@@ -461,7 +450,6 @@ body {
   color: var(--text-primary);
 }
 
-/* Footer */
 .footer {
   margin-top: 4rem;
   padding: 2rem 0;
@@ -568,7 +556,6 @@ body {
 
 
 
-/* Shimmer effect for processing */
 .image-preview-wrapper.processing {
   filter: blur(2px) grayscale(0.5);
   transition: filter 0.3s ease;
@@ -597,7 +584,6 @@ body {
   100% { background-position: 200% 0; }
 }
 
-/* Rotation slider */
 .slider-container {
   width: 100%;
   max-width: 600px;
@@ -646,7 +632,6 @@ body {
   font-weight: 500;
 }
 
-/* Button Active/Toggle State */
 .btn-secondary.active {
   background: rgba(59, 130, 246, 0.2);
   border-color: var(--accent);
